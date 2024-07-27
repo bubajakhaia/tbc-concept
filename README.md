@@ -1,7 +1,8 @@
 # Getting Started with Create React App;
 
 ## To start this project run in your terminal;
-npm i
+npm i 
+###
 npm start
 ### || 
 or
