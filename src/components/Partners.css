@@ -1,0 +1,27 @@
+.partners-container{
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    
+}
+.partners-list{
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 60px;
+    display: grid;
+}
+.partner-img{
+    
+        height: auto;
+        max-width: 100%;
+        display: inline-block;
+    
+}
+.partner-img:hover{
+    cursor: pointer;
+}

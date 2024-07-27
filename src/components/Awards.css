@@ -1,0 +1,90 @@
+.swiper-container {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  position: relative; /* Ensure swiper has relative positioning */
+}
+.swiper-slide {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.award-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 4px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.award-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.award_logo-wrapper {
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.award_logo {
+  max-height: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -5px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.award-card_content p {
+  margin-top: 5px;
+  color: rgb(116, 115, 115);
+}
+.award-card_content {
+  grid-row-gap: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  display: flex;
+}
+.award-swip:hover {
+  cursor: grab;
+}
+.award-swip-controls {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  padding-bottom: 20px; /* Adjust as needed */
+}
+#swiper-award-pagination {
+  width: 90%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.2); /* Background of the progress bar */
+  position: relative;
+}
+.swiper-award-arrows {
+  flex:1;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+.swiper-award-progressbar-fill {
+  height: 100%;
+  background: blue; /* Color of the progress */
+  transition: width 0.3s; /* Smooth transition for width changes */
+}

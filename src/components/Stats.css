@@ -1,0 +1,51 @@
+.stats-container {
+    width: 100%;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+  
+  .numbers {
+    display: flex;
+    gap: 30px; /* Space between items */
+  }
+  
+  .numbers_item {
+    background-color: white;
+    border-radius: 8px;
+    flex: 1;
+    padding: 40px 48px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .numbers_number {
+    color: #141719;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0; /* Ensures no additional spacing */
+  }
+  
+  .numbers p {
+    margin: 16px 0 0; /* Space below the number */
+  }
+  @media screen and (max-width: 991px) {
+    .numbers {
+      flex-direction: column; /* Stack items vertically */
+     
+    }
+    .stats-container{
+      margin: 20px;
+      padding-right: 20px;
+    }
+    .numbers_item{
+      margin-right: 40px;
+    }
+  }

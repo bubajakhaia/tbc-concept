@@ -1,0 +1,71 @@
+.tabs_menu-list {
+    background-color: white;
+    border-bottom: 1px solid #eef1f1;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    border-radius: 3px;
+}
+.kit-tabs_menu-link:hover{
+    border-bottom: 1px solid grey;
+}
+
+.kit-tabs_menu-link {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    transition: border-color .25s ease-in-out;
+    position: relative;
+
+}
+.tabs_advantages-tab {
+    grid-row-gap: 24px;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 48px 80px;
+    display: flex;
+}
+.product-tabs-faq {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+  }
+  
+  .product-tabs-faq-tab-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .product-tabs-faq-tab-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px; /* Increase font size for larger text */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make tabs full width */
+    box-sizing: border-box;
+  }
+  
+  .product-tabs-faq-tab-item.active {
+    background-color: #e0e0e0; /* Highlight active tab */
+    font-weight: bold;
+  }
+  
+  .product-tabs-faq-tab-item:hover {
+    color: #007aff;
+  }
+  
+  .product-tabs-faq-content {
+    padding: 10px;
+    font-size: 16px; /* Adjust font size for content */
+    border-top: 1px solid #ddd;
+  }
+  .product-button-text:hover{
+    cursor: pointer;
+  }

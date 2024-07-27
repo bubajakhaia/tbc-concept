@@ -1,0 +1,66 @@
+.get-app-container {
+    background-color: white;
+    
+}
+.get-app-innercontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    margin: 0 auto;
+}
+.phone-image-container{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 370px;
+    height: 400px;
+}
+.phone-image{
+   height: 90%;
+}
+.get-app-text{
+    padding: 50px 150px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.get-app-text-p {
+    color: #555f62;
+    font-size: 18px;
+}
+.get-app-stores{
+    width: 285px;
+    height: 51px;
+    
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    display: flex;
+}
+.appstore{
+    
+    border : 1px solid #e1e4e5;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 100%;
+}
+.appstore:hover{
+    cursor: pointer;
+    background-color:#f9fafa;
+}
+@media (max-width:991px) {
+    .get-app-innercontainer{
+        flex-direction: column-reverse;
+        align-items: center;
+     }
+     .phone-image{
+       height: 100%;
+        
+     }
+}

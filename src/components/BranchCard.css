@@ -1,0 +1,26 @@
+.branch-card{
+    background-color: white;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border: 1px solid #eef1f1;
+    border-radius: 8px
+}
+.branch-card-div{
+    width: 45%;
+
+    color: black
+    ;
+    display: flex;
+    flex-direction: column;
+}
+.branch-card-hours{
+    width: 50%;
+}
+.not-black{
+
+    color: rgb(117, 117, 117);
+    
+}

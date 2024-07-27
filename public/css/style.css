@@ -1,0 +1,85 @@
+/* Basic reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header_container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo-link img {
+  height: 50px;
+}
+
+.header_menu {
+  display: flex;
+  align-items: center;
+}
+
+.header_dropdown {
+  position: relative;
+  margin-right: 20px;
+}
+
+.header_dropdown-toggle {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.header_dropdown-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.header_dropdown-link {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.header_dropdown-link:hover {
+  background-color: #575757;
+}
+
+.header_buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header_buttons button:hover {
+  background-color: #575757;
+}
+
+.language_toggler {
+  margin-left: 20px;
+}

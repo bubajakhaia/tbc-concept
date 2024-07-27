@@ -1,0 +1,58 @@
+/* Container for the floating menu */
+.floating-menu-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Style for the menu button */
+  .menu-button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #424a4d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-button:hover {
+    background-color: rgba(66,74,77,.8);
+  }
+  
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Style for the menu items */
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Equal gap between items */
+    position: absolute;
+    bottom: 70px; /* Adjust based on the height of the button and gap */
+  }
+  
+  .menu-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    background-color: #0056b3;
+}

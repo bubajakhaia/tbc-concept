@@ -1,0 +1,68 @@
+.swip {
+  cursor: grab;
+  max-width: 1110px;
+  height: 100%;
+  position: relative; /* Ensure swiper has relative positioning */
+}
+
+.slider-header {
+  max-width: 1110px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 36px auto;
+  display: flex;
+}
+
+.arrow-link {
+  display: flex;
+  align-items: center;
+  color: blue;
+  text-decoration: none;
+}
+
+#swiper-controls-c {
+  max-width: 1110px;
+  justify-content: space-between;
+  display: flex;
+
+  margin: 25px auto ;
+}
+
+#swiper-pagination {
+  max-width: 1030px;
+  width: 90%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.2); /* Background of the progress bar */
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.swiper-pagination-progressbar-fill {
+  height: 100%;
+  background: blue; /* Color of the progress */
+  transition: width 0.3s; /* Smooth transition for width changes */
+
+}
+
+#swiper-arrows {
+  display: flex;
+  align-items: center;
+  max-width: 70px;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-left: 5px; /* Add some space between progress bar and arrows */
+}
+
+.swiper-nav-arrow {
+  color: blue; /* Arrow color */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px; /* Add space between arrows */
+}
+#swiper-button-prev-c, #swiper-button-next-c{
+  position: relative;
+  
+}

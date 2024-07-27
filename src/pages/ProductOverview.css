@@ -1,0 +1,28 @@
+.product-overview-page{
+    background-color: #f9fafa;
+}
+.product-overview-padding{
+    padding-bottom: 120px;
+}
+.personal-banker-page{
+    background-color: #f9fafa;
+    
+}
+.personal-banker-text{
+    width: 40%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    color: #555f62;
+
+}
+.product-kits-page{
+    background-color: #f9fafa;
+}
+@media (max-width:991px){
+    .personal-banker-text{
+        width: 80%;
+        
+    
+    }
+}

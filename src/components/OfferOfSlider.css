@@ -1,0 +1,73 @@
+.offer-card {
+  background-color: #f9fafa;
+    cursor: pointer;
+    height: 390px;
+    border: 1px solid #e1e4e5;
+    border-radius: 8px;
+    flex-direction: column;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+  }
+  .offer-card:hover{
+    
+    background-color: white;
+    box-shadow: 0 36px 40px -15px rgba(12,43,67,.07);
+    
+  }
+  .offer-card:hover img{
+    transform: translateY(-2px);
+  }
+  
+  .offer-card-img-wrapper {
+    position: relative;
+    overflow:hidden;
+    
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+    transition: all .25s ease-in-out;
+  }
+  
+  .card-logo {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 78px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px 0 0 6px;
+}
+.card-log-img{
+  object-fit: fill;
+}
+  .offer-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center ;
+    padding-top: 25px;
+    padding-left: 25px;
+    
+
+  }
+  
+  .category-wrap {
+    margin-bottom: 5px;
+  }
+  
+  .card-category {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }

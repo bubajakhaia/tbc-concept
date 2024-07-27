@@ -1,0 +1,88 @@
+.space-card-swiper:hover{
+cursor: grab;
+}
+.space-card-swiper{
+    height: 600px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+    .space-card-pagination {
+        position: absolute;
+        bottom: 10px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        height: 4px; /* Adjust the height as needed */
+        background-color: grey; /* Background color of the progress bar */
+        z-index: 10;
+      }
+ 
+  
+  /* Progress bar filler */
+  .space-card-pagination .swiper-pagination-progressbar-fill {
+    background-color: blue; /* Color of the filled portion of the progress bar */
+  }
+  .branch-card-pagination{
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90px;
+  }
+  .branch-pagination-button{
+    margin: 0px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 6px;
+    font-weight: 500;
+    transition: border-color .25s ease-in-out,color .25s ease-in-out;
+    
+  }
+  .branch-pagination-button:hover{
+    background-color: grey;
+  }
+  .branch-pagination-button:active{
+    border-color: black;
+    border-radius: 4px;
+  }
+.branch-pagination-arrow{
+  
+  padding: 10px;
+  border: none;
+}
+.branch-filter-container{
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  height: 60px;
+}
+.branch-search{
+  width: 100%;
+  border: 1px solid #eef1f1;
+    border-radius: 4px
+}
+.branch-dropdown{
+  width: 300px;
+  border: 1px solid #eef1f1;
+  border-radius: 4px
+}
+.cafe-swiper-image{
+  max-width: 100%;
+  border-radius: 4px;
+}
+@media (max-width:768px){
+  .cafe-sm-container{
+    padding: 40px;
+  }
+  .branch-filter-container{
+    flex-direction: column;
+  }
+  .branch-dropdown{
+    width: 100%;
+    
+  }
+}
