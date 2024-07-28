@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./FooterBottom.css"; // Import your CSS file for styling
 import Modal from "./Modal";
 
-const FooterBottom = ({language}) => {
+const FooterBottom = ({ language }) => {
   const [isPrivacyModalOpen, setPrivacyModalOpen] = useState(false);
   const [isTermsModalOpen, setTermsModalOpen] = useState(false);
 
@@ -39,7 +39,11 @@ const FooterBottom = ({language}) => {
                 ></path>
               </svg>
             </div>
-            <p className="footer-bottom-text">{language==="ge"? "2024 ყველა უფლება დაცულია":"All Rights Reserved"}</p>
+            <p className="footer-bottom-text">
+              {language === "ge"
+                ? "2024 ყველა უფლება დაცულია"
+                : "All Rights Reserved"}
+            </p>
           </div>
           <div className="footer-bottom-links">
             <span>
@@ -47,7 +51,7 @@ const FooterBottom = ({language}) => {
                 className="footer-bottom-link c-cursor-pointer"
                 onClick={openPrivacyModal}
               >
-                {language==="ge"? "კონფიდენციალურობა":"Privacy Policy"}
+                {language === "ge" ? "კონფიდენციალურობა" : "Privacy Policy"}
               </span>
             </span>
             <span>
@@ -55,7 +59,9 @@ const FooterBottom = ({language}) => {
                 className="footer-bottom-link c-cursor-pointer"
                 onClick={openTermsModal}
               >
-                {language==="ge"? "წესები და პირობები":"Terms and Conditions"}
+                {language === "ge"
+                  ? "წესები და პირობები"
+                  : "Terms and Conditions"}
               </span>
             </span>
           </div>
@@ -64,13 +70,40 @@ const FooterBottom = ({language}) => {
       {/* Privacy Modal */}
       <Modal isOpen={isPrivacyModalOpen} onClose={closePrivacyModal}>
         <h2>კონფიდენციალურობა</h2>
-        <p>Privacy policy content goes here...</p>
+        <p style={{padding: "150px 300px"}}>ვინ ვართ ჩვენ
+სს თიბისი ბანკი წარმოადგენს საქართველოს კანონმდებლობის შესაბამისად ლიცენზირებულ კომერციული ბანკს, რომელიც წინამდებარე პოლიტიკის მიზნებისთვის მოქმედებს, როგორც მონაცემთა დამმუშავებელი.
+
+თიბისი ბანკის საიდენტიფიკაციო კოდია: 204854595
+
+იურიდიული მისამართი: კ. მარჯანიშვილის ქ. №7, ჩუღურეთის რაიონი, თბილისი, საქართველო
+
+ჩვენს შესახებ მეტი იხილეთ ვებგვერდზე.
+
+ჩვენ, თიბისი ბანკი ვაცხადებთ, რომ:
+დავიცავთ თქვენი მონაცემების კონფიდენციალურობას;  
+არ გამოვიყენებთ თქვენს მონაცემებს უკანონოდ;
+თქვენი მოთხოვნის შესაბამისად, მოგაწვდით სრულ და დეტალურ ინფორმაციას თქვენი პერსონალური მონაცემების დამუშავებასთან დაკავშირებით
+დოკუმენტის მიზანი
+წინამდებარე დოკუმენტით, გაგიზიარებთ ინფორმაციას ყველა იმ პრინციპის შესახებ, რომლითაც ვხელმძღვანელობთ თქვენი პერსონალური მონაცემების დამუშავებისას. ასევე, გაგაცნობთ, თუ როგორ გიცავთ კანონი და მოგაწვდით დეტალურ ინფორმაციას იმის შესახებ, თუ რა ტიპის პერსონალურ მონაცემებს აგროვებს ბანკი თქვენთან საქმიანი ურთიერთობის დამყარებისას და როგორ ხდება ამ მონაცემების გამოყენება, მათ შორის, პირდაპირი მარკეტინგის მიზნებისთვის.
+
+ჩვენი მიზანია, ასევე, გაგაცნოთ, თუ როგორ მუშავდება მონაცემები საქართველოს კანონმდებლობისა და მონაცემთა დაცვის ზოგადი რეგლამენტის (GDPR/UK GDPR) შესაბამისად.</p>
       </Modal>
 
       {/* Terms Modal */}
       <Modal isOpen={isTermsModalOpen} onClose={closeTermsModal}>
         <h2>წესები და პირობები</h2>
-        <p>Terms and conditions content goes here...</p>
+        <p style={{padding: "150px 300px"}}>
+          წესები და პირობები წინამდებარე ვებ-გვერდის გამოყენება რეგულირდება სს
+          „თიბისი ბანკის" (საიდენტიფიკაციო ნომერი: 204854595, მისამართი:
+          თბილისი, კ. მარჯანიშვილის ქ. #7) მიერ დადგენილი წესებითა და პირობებით.
+          ტერმინები „ბანკი", „ჩვენ" გულისხმობს სს „თიბისი ბანკს" (ასევე მისი
+          ჯგუფის წევრ მონათესავე, შვილობილ, აფილირებულ კომპანიებს), ხოლო ტერმინი
+          „თქვენ", „მომხმარებელი" გულისხმობს ინდივიდს, კომპანიას, ორგანიზაციულ
+          წარმონაქმნს, რომელიც იყენებს ბანკის ვებ-გვერდს www.tbcconcept.ge
+          გთხოვთ, ყურადღებით გაეცნოთ წინამდებარე წესებსა და პირობებს, რომელიც
+          არეგულირებს თქვენ მიერ ვებ-გვერდის გამოყენების პირობებს. იმ
+          
+        </p>
       </Modal>
     </div>
   );
