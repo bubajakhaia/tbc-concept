@@ -9,7 +9,7 @@ const ProductOfSlide = ({data, hasDate }) => {
 
   return (
     
-      <Link to={`${pathLink}`} style={{textDecoration:"none"}}>
+      <Link to={`/ge/${pathLink}`} style={{textDecoration:"none"}}>
         <>
         
           <div className="offer-card">

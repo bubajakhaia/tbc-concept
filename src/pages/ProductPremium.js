@@ -3,6 +3,7 @@ import NavStatus from "../components/NavStatus";
 import "./ProductPremium.css";
 import SubscribeModal from "../components/SubscribeModal";
 import Modal from "../components/Modal";
+import ComparePackages from "../components/ComparePackages";
 const ProductPremium = ({ header, text, imageUrl }) => {
   const [activeTab, setActiveTab] = useState("advantages");
   const [expandedFaq, setExpandedFaq] = useState(null);
@@ -318,8 +319,8 @@ const ProductPremium = ({ header, text, imageUrl }) => {
         </div>
       </div>
       <SubscribeModal isOpen={isOpen} onClose={onClose} />
-      <Modal isOpen={isSecondOpen} onClose={onSecondClose}>
-        <div style={{height:"40vh"}}>Compare packages</div>
+      <Modal  isOpen={isSecondOpen} onClose={onSecondClose} >
+        <ComparePackages/>
       </Modal>
     </div>
   );

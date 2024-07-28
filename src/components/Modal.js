@@ -5,7 +5,9 @@ const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
+
     <div className="modal-overlay">
+      
       <div className="modal-content">
         <div className='modal-close'>
         <button className="modal-close-button" onClick={onClose}>
@@ -23,7 +25,9 @@ const Modal = ({ isOpen, onClose, children }) => {
         {children}
         </div>
       </div>
+      
     </div>
+  
   );
 };
 

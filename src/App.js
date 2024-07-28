@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import ProductOverview from "./pages/ProductOverview";
 import Navigation from "./components/Navigation";
-import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
 import FooterContent from "./components/FooterContent";
@@ -24,8 +23,10 @@ import TOffer from "./pages/offers-pages/TOffer";
 import COffer from "./pages/offers-pages/COffer";
 import ZOffer from "./pages/offers-pages/ZOffer";
 import KOffer from "./pages/offers-pages/KOffer";
+import usePageTitle from "./useTitle";
 
 function App() {
+  usePageTitle();
   const {language, changeLanguage:setLanguage} = useLanguage();
 
   return (
@@ -38,6 +39,7 @@ function App() {
       <div className="to-pad">
       </div>
       <Routes>
+        
         <Route path="*" element={<PageNotFound/>}  />
         <Route path="/" index element={<HomePage className="homepage-className" />}  />
         <Route path="/ge" index element={<HomePage className="homepage-className" />}  />

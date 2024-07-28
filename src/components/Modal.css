@@ -8,14 +8,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 90;
+  z-index: 100;
 }
 
 .modal-content {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  height: 90vh;
+  
 }
 
 .modal-close-button {
