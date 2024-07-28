@@ -25,6 +25,7 @@ import ZOffer from "./pages/offers-pages/ZOffer";
 import KOffer from "./pages/offers-pages/KOffer";
 import usePageTitle from "./useTitle";
 import Koka from "./pages/offers-pages/Koka";
+import Search from "./pages/Search";
 
 function App() {
   usePageTitle();
@@ -82,6 +83,8 @@ function App() {
         <Route path="/eng/lifestyle/offers/singleview/4560-" element={<KOffer />} />
         <Route path="/ge/lifestyle/events/singleview/4515-koka-ramishvili" element={<Koka />} />
         <Route path="/eng/lifestyle/events/singleview/4515-koka-ramishvili" element={<Koka />} />
+        <Route path="/ge/search" element={<Search />} />
+        <Route path="/eng/search" element={<Search />} />
       
       </Routes>
       <FloatingMenu/>
