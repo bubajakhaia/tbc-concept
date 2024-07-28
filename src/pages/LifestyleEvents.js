@@ -5,6 +5,7 @@ import ProductOfSlide from "../components/ProductOfSlide";
 import { pastEvents } from "../data/eventsData";
 import { eventData } from "../data/eventsData";
 import { useLanguage } from "../components/context/LanguageContext";
+import { Link } from "react-router-dom";
 const FilterCategory = ({ category, isActive, onClick }) => (
   <div
     className={`filter-category ${isActive ? "is-active" : ""}`}
@@ -94,6 +95,7 @@ const LifestyleEvents = () => {
                     {language==="ge"?event.description:event.descriptionB}
                   </div>
                   <div className="listing-button-wrap">
+                    <Link to="/ge/lifestyle/events/singleview/4515-koka-ramishvili">
                     <button className="listing-button">
                       <svg
                         width="16"
@@ -106,6 +108,7 @@ const LifestyleEvents = () => {
                       </svg>
                       <span className="listing-button-text">{event.button_text}</span>
                     </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="listing-image-wrap">

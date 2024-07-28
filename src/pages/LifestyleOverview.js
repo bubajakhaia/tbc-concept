@@ -14,7 +14,7 @@ const swiperSlides = [
     logo: "https://static.tbcconcept.ge/desktop/media/hwdkh3gg.abesitee-17.png",
     categories: ["მასტერქარდი", "ვიზა", "სამოგზაურო უპირატესობები"],
     title: "Booking.com - სპეციალური შეთავაზება",
-    pathLink: "/lifestyle/offers/singleview/4358-booking.com",
+    pathLink: "/lifestyle/offers/singleview/4563-",
   },
   {
     desktopImage:
@@ -22,7 +22,7 @@ const swiperSlides = [
     logo: "https://static.tbcconcept.ge/desktop/media/nwvz2qxb.rpbsite-06.png",
     categories: ["ავტო", "თეგეტა მოტორსი"],
     title: "თეგეტა მოტორსი",
-    pathLink: "/lifestyle/offers/singleview/4317-tegeta-motors",
+    pathLink: "/lifestyle/offers/singleview/4560-",
   },
   {
     desktopImage:

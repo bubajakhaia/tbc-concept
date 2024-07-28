@@ -1,9 +1,11 @@
 import React from 'react';
 import "./OfferOfSlider.css"
 import { Link } from 'react-router-dom';
+import { useLanguage } from './context/LanguageContext';
 const OfferOfSlider = ({ desktopImage, logo, categories, title,pathLink }) => {
+  const {language} = useLanguage();
   return (
-    <Link to={`/ge${pathLink}`} style={{textDecoration:"none", color:"black"}}>
+    <Link to={`/${language}${pathLink}`} style={{textDecoration:"none", color:"black"}}>
     <div className="offer-card">
       <div className="offer-card-img-wrapper">
         <picture>

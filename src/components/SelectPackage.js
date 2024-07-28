@@ -6,7 +6,7 @@ import { useLanguage } from './context/LanguageContext';
 const SelectPackage = ({ imgSrc, title, link }) => {
   const {language} = useLanguage()
   return (
-        <Link to={`/ge/${link}`} className="grid-card">
+        <Link to={`/${language}/${link}`} className="grid-card">
         <div className="grid-card_img-wrapper">
           <img src={imgSrc} alt={title} className="grid-card_img" />
         </div>
