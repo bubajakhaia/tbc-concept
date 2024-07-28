@@ -44,6 +44,9 @@
   color: black;
   font-size: 14px;
   font-weight: 600;
+  max-width: 200px;
+  margin-top: 5px;
+
 }
 .header-dropdown-list {
   display: none; /* Hide dropdown by default */
