@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Navigation.css"; // Import your CSS file
 import search from "../imgs/search.svg";
@@ -12,22 +12,37 @@ import DigitalBank from "./DigitalBank";
 const Navigation = ({ language, setLanguage }) => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false); // State for managing hamburger menu
+  const dropdownRef = useRef(null);
+
   const navigate = useNavigate();
   const location = useLocation(); // Get current URL path
 
   const handleDropdownToggle = (dropdownId) => {
     setDropdownOpen((prev) => (prev === dropdownId ? null : dropdownId));
   };
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownOpen(false);
+    }
+  };
+  // const handleLanguageChange = (lang) => {
+  //   setLanguage(lang);
+  //   setDropdownOpen(null); // Close the dropdown when language changes
 
+  //   // Replace language segment in the current URL
+  //   const path = location.pathname.replace(/^\/(ge|eng)/, `/${lang}`);
+  //   navigate(path); // Update URL to reflect the selected language
+  // };
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
     setDropdownOpen(null); // Close the dropdown when language changes
-
-    // Replace language segment in the current URL
-    const path = location.pathname.replace(/^\/(ge|eng)/, `/${lang}`);
-    navigate(path); // Update URL to reflect the selected language
+  
+    const path = /^\/(ge|eng)/.test(location.pathname)
+      ? location.pathname.replace(/^\/(ge|eng)/, `/${lang}`)
+      : `${lang}${location.pathname}`;
+  
+    navigate(path);
   };
-
   const handleDropdownItemClick = () => {
     setDropdownOpen((prev) => !prev); // Close dropdown when an item is clicked
   };
@@ -39,10 +54,16 @@ const Navigation = ({ language, setLanguage }) => {
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
-
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   return (
     <>
-      <header className="header">
+      <header ref={dropdownRef} 
+      className="header" >
         <div className="header-container">
           <Link to={`/${language}`} className="header-logo-link">
             {/* <img src={language ==="ge"? icon: icon2} alt="Logo" /> */}

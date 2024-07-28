@@ -40,10 +40,16 @@ const NavStatus = () => {
     case '/ge':
       breadcrumbs = breadcrumbsHome;
       break;
+    case '/ge/':
+      breadcrumbs = breadcrumbsHome;
+      break;
     case '/':
       breadcrumbs = breadcrumbsHome;
       break;
     case '/eng':
+      breadcrumbs = breadcrumbsHomeB;
+      break;
+    case '/eng/':
       breadcrumbs = breadcrumbsHomeB;
       break;
     case '/ge/products/overview':

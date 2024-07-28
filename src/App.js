@@ -39,8 +39,9 @@ function App() {
       <div className="to-pad">
       </div>
       <Routes>
+      <Route path="*" element={<PageNotFound/>}  />
+
         
-        <Route path="*" element={<PageNotFound/>}  />
         <Route path="/" index element={<HomePage className="homepage-className" />}  />
         <Route path="/ge" index element={<HomePage className="homepage-className" />}  />
         <Route path="/eng" element={<HomePage className="homepage-className" />}  />
@@ -78,7 +79,6 @@ function App() {
         <Route path="/eng/lifestyle/offers/singleview/4561-" element={<ZOffer />} />
         <Route path="/ge/lifestyle/offers/singleview/4560-" element={<KOffer />} />
         <Route path="/eng/lifestyle/offers/singleview/4560-" element={<KOffer />} />
-
       </Routes>
       <FloatingMenu/>
       <div className="footer-wrapper">
