@@ -3,10 +3,10 @@ import "./SelectPackage.css"
 import { Link } from 'react-router-dom';
 import { useLanguage } from './context/LanguageContext';
 
-const SelectPackage = ({ imgSrc, title, link,  pathLink }) => {
+const SelectPackage = ({ imgSrc, title, link }) => {
   const {language} = useLanguage()
   return (
-        <Link to={link} className="grid-card">
+        <Link to={`/ge/${link}`} className="grid-card">
         <div className="grid-card_img-wrapper">
           <img src={imgSrc} alt={title} className="grid-card_img" />
         </div>
